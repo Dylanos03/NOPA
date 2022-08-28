@@ -2,3 +2,102 @@
 a ul li {
     text-decoration: none;
 }
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #011627;
+}
+
+li, a, button {
+    font-family: "kanit", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FDFFFC;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: #41EAD4;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: #FF0022;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: #41EAD4;
+}
+
+.title h1{
+    font-family: 'kanit', sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+    color: #41EAD4;
+    text-decoration: none;
+}
+
+.title {
+    align-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.title p{
+    font-family: 'kanit', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #FDFFFC;
+    text-decoration: none;
+}
+
+.WWD {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.WWD h4{
+    font-family: 'kanit', sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+    color: #41EAD4;
+    text-decoration: none;
+}
