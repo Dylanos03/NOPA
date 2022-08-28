@@ -45,6 +45,7 @@ header {
 
 .nav__links li a:hover {
     color: #41EAD4;
+    font-size: 20px;
 }
 
 button {
@@ -58,6 +59,7 @@ button {
 
 button:hover {
     background-color: #41EAD4;
+    padding: 12px 30px;
 }
 
 .title h1{
@@ -66,14 +68,19 @@ button:hover {
     font-size: 64px;
     color: #41EAD4;
     text-decoration: none;
+    transition: all 0.3s ease 0s;
 }
 
 .title {
     align-content: center;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 25%;
     transform: translate(-50%,-50%);
+}
+
+.title h1:hover {
+    font-size: 72px;
 }
 
 .title p{
