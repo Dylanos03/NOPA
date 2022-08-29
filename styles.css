@@ -96,11 +96,11 @@ button:hover {
 .WWD {
     align-items: center;
     position: absolute;
-    top: 100%;
+    top: 120%;
     left: 50%;
     transform: translate(-50%,-50%);
     width: 100%;
-    padding: 10%;
+    padding: 7.5%;
 }
 
 .WWDTitle {
