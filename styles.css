@@ -15,7 +15,7 @@ li, a, button {
     font-family: "kanit", sans-serif;
     font-weight: 400;
     font-size: 16px;
-    color: #FDFFFC;
+    color: #011627;
     text-decoration: none;
 }
 
@@ -24,6 +24,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
+    box-shadow: 0px 3px 10px;
+    transform: translateY(-100%);
 }
 
 .logo {
@@ -65,7 +67,7 @@ button:hover {
 .title h1{
     font-family: 'kanit', sans-serif;
     font-weight: 400;
-    font-size: 64px;
+    font-size: 100px;
     color: #41EAD4;
     text-decoration: none;
     transition: all 0.3s ease 0s;
@@ -78,29 +80,48 @@ button:hover {
     left: 25%;
     transform: translate(-50%,-50%);
     z-index: 1;
-    background-color: none;
+    background: #011627;
+    overflow: hidden;
 }
 
 .title h1:hover {
-    font-size: 72px;
+    font-size: 115px;
 }
 
 .title p{
     font-family: 'kanit', sans-serif;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 16px;
     color: #FDFFFC;
     text-decoration: none;
 }
 
+@media (max-width: 900px){
+    .title {
+        left: 50%;
+        margin: 0px;
+    }
+    .title h1{
+        font-size: 64px;
+    }
+
+    .title p{
+        font-size: 12px;
+    }
+
+    .title h1:hover {
+        font-size: 72px;
+    }
+}
+
 .WWD {
-    align-items: center;
     position: absolute;
     top: 120%;
     left: 50%;
     transform: translate(-50%,-50%);
     width: 100%;
     padding: 7.5%;
+    box-shadow: 0px 3px 20px;
 }
 
 .WWDTitle {
@@ -109,6 +130,7 @@ button:hover {
     font-size: 64px;
     color: #41EAD4;
     text-decoration: none;
+    text-align: center;
 }
 
 
@@ -126,9 +148,28 @@ button:hover {
 
 
 .WWDText {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     font-family: 'kanit', sans-serif;
     font-weight: 400;
     font-size: 16px;
     color: #FDFFFC;
     text-decoration: none;
+}
+
+.WWDBox {
+    display: block;
+    align-items: center;
+    gap: 2rem;
+}
+
+.titleText {
+    background: #011627;
+    overflow: hidden;
+}
+
+.titleText span {
+    transform: translateY(100%);
+    display: inline-block;
 }
